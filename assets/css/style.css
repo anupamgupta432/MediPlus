@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* position: relative;   */
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+ul {
+  display: flex;
+  /* list-style-type: none; */
+  /* margin: 10px; */
+  gap: 20px;
+  list-style: none;
+  /* flex-direction: row-reverse; */
+}
+.navicon {
+  display: none;
+}
+
+.Home_Contant span {
+  color: rgb(91, 129, 252);
+}
+.Home_bg {
+  background: url("/assets/images/Bg-Dr-Image.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.Home-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.btn {
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+.blue-btn {
+  background-color: rgb(91, 129, 252);
+}
+.black-btn {
+  background-color: black;
+}
+/* .Home_Contant{
+    padding: 150px 0 100px 0; 
+} */
+p {
+  margin: 25px 0px;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.inner-contant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.inner {
+  background-color: rgb(91, 129, 252);
+  border-radius: 3%;
+  padding: 30px 50px;
+  color: white;
+  z-index: 5;
+}
+.inner a {
+  color: white;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.section-title div img {
+  margin-top: 15px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 10px;
+}
+.icons i {
+  font-size: 35px;
+  margin: 20px 0;
+  width: 100px;
+  height: 100px;
+  padding: 31px 0;
+  border: 1px solid #1a76d1;
+  border-radius: 50%;
+  color: #1a76d1;
+}
+
+.icon .icons {
+  border: 1px solid #1a76d1;
+  min-height: 22rem;
+  position: relative;
+}
+
+.icons .button_icon {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (max-width: 1100px) {
+  .inner-contant {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .margin {
+    margin-top: 50px !important;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .icon {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 830px) {
+  .navicon {
+    display: inline-block !important;
+  }
+  .navbar .navlink {
+    display: none !important;
+  }
+}
